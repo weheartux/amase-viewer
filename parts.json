@@ -1,0 +1,43 @@
+{
+	"Aircraft": {
+		"title": "AMASE Aircraft",
+		"markdown": "This interactive prototype demonstrates the AMASE concept. Click parts to view modelling notes. Replace the GLB with your CAD export later."
+	},
+	"Fuselage": {
+		"title": "Fuselage",
+		"markdown": "- Modelled as a rigid body with mass and inertia from CAD.\n- Aerodynamics via body-axis drag and interference terms."
+	},
+	"Wing.L": {
+		"title": "Left Wing",
+		"markdown": "- Lifting-line approximation for spanwise loading.\n- Nonlinear Cl(α), Cm(α) with flap/aileron effects."
+	},
+	"Wing.R": {
+		"title": "Right Wing",
+		"markdown": "- Mirrors left wing parameters with asymmetric perturbations for failure/trim studies."
+	},
+	"Aileron.L": {
+		"title": "Aileron",
+		"markdown": "Deflection-to-roll control power derived from control surface geometry and hinge moments."
+	},
+	"Aileron.R": {
+		"title": "Aileron",
+		"markdown": "Same as left, used for cross-check in identification."
+	},
+	"Elevator": {
+		"title": "Elevator",
+		"markdown": "Pitch control law includes rate/α feedback with schedule by dynamic pressure."
+	},
+	"Rudder": {
+		"title": "Rudder",
+		"markdown": "Yaw control with sideslip feedback; cross-coupling terms considered."
+	},
+	"Propeller": {
+		"title": "Propeller",
+		"markdown": "- Disk actuator model with advance ratio.\n- Includes slipstream effects on tail in high power."
+	},
+	"Engine": {
+		"title": "Engine",
+		"markdown": "Simple power lever to thrust mapping; add transient dynamics in future iterations."
+	}
+}
+

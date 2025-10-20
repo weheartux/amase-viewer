@@ -1,0 +1,1 @@
+npx serve . -l 5173 --single

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AMASE 3D Viewer (Prototype)</title>
+	<link rel="preconnect" href="https://unpkg.com">
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<div id="app">
+		<header class="brand">
+			<div class="logo">AMASE</div>
+			<div class="title">Advanced Modelling and Simulation Environment</div>
+		</header>
+		<main class="layout">
+			<section class="viewer">
+				<div id="canvas-container" aria-label="Interactive aircraft model" role="application"></div>
+				<div class="toolbar">
+					<button id="resetView" title="Reset view">Reset view</button>
+				</div>
+				<div id="loading" class="loading">
+					<div class="spinner"></div>
+					<div id="progressText">Loading…</div>
+				</div>
+			</section>
+			<aside class="panel" id="infoPanel" aria-live="polite">
+				<h2 id="partTitle">Aircraft</h2>
+				<div id="partContent" class="content">
+					Click a part to learn about the modelling methodology.
+				</div>
+			</aside>
+		</main>
+	</div>
+
+	<script type="importmap">
+	{
+		"imports": {
+			"three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+		}
+	}
+	</script>
+	<script type="module" src="./main.js"></script>
+</body>
+</html>
+
